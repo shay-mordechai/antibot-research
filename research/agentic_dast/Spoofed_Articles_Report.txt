@@ -1,0 +1,1173 @@
+=== ADVANCED JA3 SPOOFING EXTRACTION ===
+
+Title: AitM Phishing Targets TikTok Business Accounts Using Cloudflare Turnstile Evasion
+URL: https://thehackernews.com/2026/03/aitm-phishing-targets-tiktok-business.html
+--------------------------------------------------------------------------------
+Threat actors are using adversary-in-the-middle (AitM) phishing pages to seize control of TikTok for Business accounts in a new campaign, according to a report from Push Security.
+
+Business accounts associated with social media platforms are a lucrative target, as they can be
+
+weaponized by bad actors
+
+for malvertising and distributing malware.
+
+"TikTok has been historically abused to distribute malicious links and social engineering instructions," Push Security
+
+said
+
+. "This includes multiple infostealers like Vidar, StealC, and Aura Stealer delivered via ClickFix-style instructions with AI-generated videos posed as activation guides for Windows, Spotify, and CapCut."
+
+The campaign begins with tricking victims into clicking on a malicious link that directs them to either a lookalike page impersonating TikTok for Business or a page that's designed to impersonate Google Careers, along with an option to schedule a call to discuss the opportunity.
+
+It's worth noting that a prior iteration of this credential phishing campaign was
+
+flagged
+
+by Sublime Security in October 2025, with emails masquerading as outreach messages used as a social engineering tactic.
+
+Regardless of the type of page served, the end goal is the same: perform a Cloudflare Turnstile check to block bots and automated scanners from analyzing the contents of the page and serve a malicious AitM phishing page login page that's designed to steal their credentials.
+
+The phishing pages are hosted on the following domains -
+
+welcome.careerscrews[.]com
+
+welcome.careerstaffer[.]com
+
+welcome.careersworkflow[.]com
+
+welcome.careerstransform[.]com
+
+welcome.careersupskill[.]com
+
+welcome.careerssuccess[.]com
+
+welcome.careersstaffgrid[.]com
+
+welcome.careersprogress[.]com
+
+welcome.careersgrower[.]com
+
+welcome.careersengage[.]com
+
+welcome.careerscrews[.]com
+
+The development comes as another phishing campaign has been observed using Scalable Vector Graphics (SVG) file attachments to deliver malware to targets located in Venezuela.
+
+According to a report published by WatchGuard, the messages have SVG files with file names in Spanish, masquerading as invoices, receipts, or budgets.
+
+"When these malicious SVGs are opened, they communicate with a URL that downloads the malicious artifact," the company
+
+said
+
+. "This campaign uses ja.cat to shorten URLs from legitimate domains that have a vulnerability that allows redirects to any URL, so they point to the original domain where the malware is downloaded."
+
+The downloaded artifact is a malware written in Go that shares overlaps with a
+
+BianLian
+
+ransomware sample
+
+detailed by SecurityScorecard
+
+in January 2024.
+
+"This campaign is a strong reminder that even seemingly harmless file types like SVGs can be used to deliver serious threats," WatchGuard said. "In this case, malicious SVG attachments were used to initiate a phishing chain that led to malware delivery associated with
+
+BianLian
+
+activity."
+
+Found this article interesting?  Follow us on
+
+Google News
+
+,
+
+Twitter
+
+and
+
+LinkedIn
+
+to read more exclusive content we post.
+
+================================================================================
+
+Title: Apple Fixes WebKit Vulnerability Enabling Same-Origin Policy Bypass on iOS and macOS
+URL: https://thehackernews.com/2026/03/apple-fixes-webkit-vulnerability.html
+--------------------------------------------------------------------------------
+Apple on Tuesday released its first round of
+
+Background Security Improvements
+
+to address a security flaw in WebKit that affects iOS, iPadOS, and macOS.
+
+The vulnerability, tracked as
+
+CVE-2026-20643
+
+(CVSS score: N/A), has been described as a cross-origin issue in WebKit's Navigation API that could be exploited to bypass the same-origin policy when processing maliciously crafted web content.
+
+The flaw affects iOS 26.3.1, iPadOS 26.3.1, macOS 26.3.1, and macOS 26.3.2. It has been addressed with improved input validation in iOS 26.3.1 (a), iPadOS 26.3.1 (a), macOS 26.3.1 (a), and macOS 26.3.2 (a). Security researcher Thomas Espach has been credited with discovering and reporting the shortcoming.
+
+Apple
+
+notes
+
+that Background Security Improvements are meant for delivering lightweight security releases for components such as the Safari browser, WebKit framework stack, and other system libraries through smaller, ongoing security patches rather than issuing them as part of larger software updates.
+
+The feature is supported and enabled for future releases starting with iOS 26.1, iPadOS 26.1, and macOS 26. In cases where compatibility issues are discovered, the improvements may be temporarily removed and then enhanced in a subsequent software update, Apple adds.
+
+Users can control Background Security Improvements via the Privacy and Security menu in the Settings app. To ensure that they are automatically installed, it's advised to keep the "Automatically Install" option on.
+
+It's worth noting that if users opt to have this setting disabled, they will have to wait until the improvements are included in the next software update. Viewed in that light, the feature is analogous to
+
+Rapid Security Response
+
+, which it
+
+introduced
+
+in iOS 16 as a way to install minor security updates.
+
+"If a Background Security Improvement has been applied, and you choose to remove it, your device reverts to the baseline software update (for example, iOS 26.3) with no Background Security Improvements applied," Apple noted in a help document.
+
+The development comes little over a month after Apple
+
+issued
+
+fixes for an actively exploited zero-day impacting iOS, iPadOS, macOS Tahoe, tvOS, watchOS, and visionOS (CVE-2026-20700, CVSS score: 7.8) that could result in arbitrary code execution.
+
+Last week, the iPhone maker also
+
+expanded patches
+
+for four security flaws (CVE-2023-43010, CVE-2023-43000, CVE-2023-41974, and CVE-2024-23222) that were weaponized as part of the Coruna exploit kit.
+
+Found this article interesting?  Follow us on
+
+Google News
+
+,
+
+Twitter
+
+and
+
+LinkedIn
+
+to read more exclusive content we post.
+
+================================================================================
+
+Title: Google Fixes Two Chrome Zero-Days Exploited in the Wild Affecting Skia and V8
+URL: https://thehackernews.com/2026/03/google-fixes-two-chrome-zero-days.html
+--------------------------------------------------------------------------------
+Google on Thursday released security updates for its Chrome web browser to address two high-severity vulnerabilities that it said have been exploited in the wild.
+
+The list of vulnerabilities is as follows -
+
+CVE-2026-3909
+
+(CVSS score: 8.8) - An out-of-bounds write vulnerability in the Skia 2D graphics library that allows a remote attacker to perform out-of-bounds memory access via a crafted HTML page.
+
+CVE-2026-3910
+
+(CVSS score: 8.8) - An inappropriate implementation vulnerability in the V8 JavaScript and WebAssembly engine that allows a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page.
+
+Both vulnerabilities were discovered and reported by Google itself on March 10, 2026. As is customary in these cases, no details are available about how the issues are being abused in the wild and who is behind the efforts. This is done so as to prevent other threat actors from exploiting the issues.
+
+"Google is aware that exploits for both CVE-2026-3909 and CVE-2026-3910 exist in the wild," the company
+
+noted
+
+.
+
+The development comes less than a month after Google shipped fixes for a high-severity use-after-free bug in Chrome's CSS component (
+
+CVE-2026-2441
+
+, CVSS score: 8.8) that had also been exploited as a zero-day. Google has patched a total of three actively weaponized Chrome zero-days since the start of the year.
+
+For optimal protection, users are advised to update their Chrome browser to versions 146.0.7680.75/76 for Windows and Apple macOS, and 146.0.7680.75 for Linux. To make sure the latest updates are installed, users can navigate to More > Help > About Google Chrome and select Relaunch.
+
+Users of other Chromium-based browsers, such as Microsoft Edge, Brave, Opera, and Vivaldi, are also advised to apply the fixes as and when they become available.
+
+Update
+
+The U.S. Cybersecurity and Infrastructure Security Agency (CISA), on March 13, 2026,
+
+added
+
+both the Google Chrome vulnerabilities to its Known Exploited Vulnerabilities (
+
+KEV
+
+) catalog, requiring Federal Civilian Executive Branch (FCEB) agencies to apply the fixes by March 27, 2026.
+
+Found this article interesting?  Follow us on
+
+Google News
+
+,
+
+Twitter
+
+and
+
+LinkedIn
+
+to read more exclusive content we post.
+
+================================================================================
+
+Title: New Chrome Vulnerability Let Malicious Extensions Escalate Privileges via Gemini Panel
+URL: https://thehackernews.com/2026/03/new-chrome-vulnerability-let-malicious.html
+--------------------------------------------------------------------------------
+Cybersecurity researchers have disclosed details of a now-patched security flaw in Google Chrome that could have permitted attackers to escalate privileges and gain access to local files on the system.
+
+The vulnerability, tracked as
+
+CVE-2026-0628
+
+(CVSS score: 8.8), has been described as a case of insufficient policy enforcement in the WebView tag. It was
+
+patched
+
+by Google in early January 2026 in version 143.0.7499.192/.193 for Windows/Mac and 143.0.7499.192 for Linux.
+
+"Insufficient policy enforcement in WebView tag in Google Chrome prior to 143.0.7499.192 allowed an attacker who convinced a user to install a malicious extension to inject scripts or HTML into a privileged page via a crafted Chrome extension," according to a description on the NIST National Vulnerability Database (NVD).
+
+Palo Alto Networks Unit 42 researcher Gal Weizman, who discovered and reported the flaw on November 23, 2025,
+
+said
+
+the issue could have permitted malicious extensions with basic permissions to seize control of the new
+
+Gemini Live panel
+
+in Chrome.
+
+The side panel, which leverages a new "chrome://glic" URL that uses a WebView component to load the "gemini.google[.]com" web app, can be launched by clicking the Gemini icon located in the Chrome toolbar's top right corner. Google
+
+added
+
+Gemini integration to Chrome in September 2025.
+
+This attack could have been abused by an attacker to achieve privilege escalation, enabling them to access the victim's camera and microphone without their permission, take screenshots of any website, and access local files. The issue has been codenamed
+
+Glic Jack
+
+, short for Gemini Live in Chrome hijack.
+
+The findings highlight an emerging attack vector arising from baking artificial intelligence (AI) and agentic capabilities directly into web browsers to facilitate real-time content summarization, translation, and automated task execution, as the same capabilities could be abused to perform privileged actions.
+
+The problem, at its core, is the need for granting these AI agents privileged access to the browsing environment to perform multi-step operations, thereby becoming a double-edged sword when an attacker embeds hidden prompts in a malicious web page, and a victim user is tricked into accessing it via social engineering or some other means.
+
+The prompt could instruct the AI assistant to perform actions that would otherwise be blocked by the browser, leading to data exfiltration or code execution. Even worse, the web page could manipulate the agent to
+
+store the instructions in memory
+
+, causing it to persist across sessions.
+
+Besides the expanded attack surface, Unit 42 said the integration of an AI side panel in agentic browsers brings back classic browser security risks.
+
+"By placing this new component within the high-privilege context of the browser, developers could inadvertently create new logical flaws and implementation weaknesses," Weizman said. "This could include vulnerabilities related to cross-site scripting (XSS), privilege escalation, and side-channel attacks that can be exploited by less-privileged websites or browser extensions."
+
+While browser extensions operate based on a defined set of permissions, successful exploitation of CVE-2026-0628 undermines the browser security model and allows an attacker to run arbitrary code at "gemini.google[.]com/app" via the browser panel and gain access to sensitive data.
+
+"An extension with access to a basic permission set through the
+
+declarativeNetRequest API
+
+allowed permissions that could have enabled an attacker to inject JavaScript code into the new Gemini panel," Weizman added. "When the Gemini app is loaded within this new panel component, Chrome hooks it with access to powerful capabilities."
+
+It's worth noting that the declarativeNetRequest API allows extensions to intercept and change properties of HTTPS web requests and responses. It's used by ad-blocking extensions to stop issuing requests to load ads on web pages.
+
+"Chromium's interpretation for what went wrong here is that WebView components (with which 'chrome://glic' embeds Gemini's web app) were forgotten from being rejected when considering [declarativeNetRequest] rule appliance," Weizman said on X.
+
+In other words, all it takes for an attacker is to trick an unsuspecting user into installing a specially crafted extension, which could then inject arbitrary JavaScript code into the Gemini side panel to interact with the file system, take screenshots, access the camera, turn on the microphone – all features necessary for the AI assistant to perform its tasks.
+
+"This difference in what type of component loads the Gemini app is the line between by-design behavior and a security flaw," Unit 42 said. An extension influencing a website is expected. However, an extension influencing a component that is baked into the browser is a serious security risk."
+
+Found this article interesting?  Follow us on
+
+Google News
+
+,
+
+Twitter
+
+and
+
+LinkedIn
+
+to read more exclusive content we post.
+
+================================================================================
+
+Title: DeepLoad Malware Uses ClickFix and WMI Persistence to Steal Browser Credentials
+URL: https://thehackernews.com/2026/03/deepload-malware-uses-clickfix-and-wmi.html
+--------------------------------------------------------------------------------
+A new campaign has leveraged the
+
+ClickFix
+
+social engineering tactic as a way to distribute a previously undocumented malware loader referred to as
+
+DeepLoad
+
+.
+
+"It likely uses AI-assisted obfuscation and process injection to evade static scanning, while credential theft starts immediately and captures passwords and sessions even if the primary loader is blocked," ReliaQuest researchers Thassanai McCabe and Andrew Currie
+
+said
+
+in a report shared with The Hacker News.
+
+The starting point of the attack chain is a ClickFix lure that tricks users into running PowerShell commands by pasting the command into the Windows Run dialog under the pretext of addressing a non-existent issue. This, in turn, uses "mshta.exe," a legitimate Windows utility to download and run an obfuscated PowerShell loader.
+
+The loader, for its part, has been found to conceal its actual functionality among meaningless variable assignments, likely in an attempt to deceive security tools. It's assessed that the threat actors relied on an artificial intelligence (AI) tool to develop the obfuscation layer.
+
+DeepLoad makes deliberate efforts to blend in with regular Windows activity and fly under the radar. This includes hiding the payload within an executable named "LockAppHost.exe," a legitimate Windows process that manages the lock screen.
+
+In addition, the malware covers up its own tracks by disabling PowerShell command history and invoking native Windows core functions directly instead of relying on PowerShell's built-in commands to launch processes and modify memory. In doing so, it bypasses common monitoring hooks that keep tabs on PowerShell-based activity.
+
+"To evade file-based detection, DeepLoad generates a secondary component on the fly by using the built-in PowerShell feature Add-Type, which compiles and runs code written in C#," ReliaQuest said. "This produces a temporary Dynamic Link Library (DLL) file dropped into the user's Temp directory."
+
+This offers a way for the malware to sidestep file name-based detections, as the DLL is compiled every time it's executed and written with a randomized file name.
+
+Another notable defense evasion tactic adopted by DeepLoad is the use of
+
+asynchronous procedure call (APC) injection
+
+to run the main payload inside a trusted Windows process without a decoded payload written to disk after launching the target process in a suspended state, writing shellcode into its memory, and then resuming the execution of the process.
+
+DeepLoad is designed to facilitate credential theft by extracting browser passwords from the host. It also drops a malicious browser extension that intercepts credentials as they are being entered on login pages and persists across user sessions unless it's explicitly removed.
+
+A more dangerous feature of the malware is its ability to automatically detect when removable media devices like USB drives are connected and copy the malware-laced files using names like "ChromeSetup.lnk," "Firefox Installer.lnk," and "AnyDesk.lnk" so as to trigger the infection once it's doubled-clicked.
+
+"DeepLoad used Windows Management Instrumentation (WMI) to reinfect a 'clean' host three days later with no user action and no attacker interaction," ReliaQuest explained. "WMI served two purposes: It broke the parent-child process chains most detection rules are built to catch, and it created a WMI event subscription that quietly re-executed the attack later."
+
+The goal, it appears, is to deploy multi-purpose malware that can perform malicious actions across the cyber kill chain and sidestep detection by security controls by avoiding writing artifacts to disk, blending into Windows processes, and spreading quickly to other machines.
+
+Exactly when the malware first came to be used in real-world attacks or the overall scale of activity is unknown at this time. However, a ReliaQuest spokesperson told The Hacker News that it's "very new" and that "its delivery via ClickFix suggests it has the potential to spread more broadly."
+
+"The infrastructure and templated implementation associated with DeepLoad may be consistent with a service-based or shared framework; however, we can't conclusively determine at this stage whether it's being offered as part of a MaaS [malware-as-a-service] model," the spokesperson added.
+
+The disclosure comes as G DATA
+
+detailed
+
+another malware loader dubbed Kiss Loader that's distributed through Windows Internet Shortcut files (URL) attached to phishing emails, which then connects to a remote
+
+WebDAV resource hosted on a TryCloudflare domain
+
+to serve a secondary shortcut that masquerades as a PDF document.
+
+Once executed, the shortcut launches a WSH script responsible for running a JavaScript component, which proceeds to retrieve and execute a batch script that displays a decoy PDF, sets up persistence in the Startup folder, and downloads the Python-based Kiss Loader. In the final stage, the loader decrypts and runs
+
+Venom RAT
+
+, an AsyncRAT variant, using
+
+APC injection
+
+.
+
+It's currently not known how widespread attacks deploying Kiss Loader are, and if it's being offered under a malware-as-a-service (MaaS) model. That said, the threat actor behind the loader claims to be from Malawi.
+
+Found this article interesting?  Follow us on
+
+Google News
+
+,
+
+Twitter
+
+and
+
+LinkedIn
+
+to read more exclusive content we post.
+
+================================================================================
+
+Title: GlassWorm Malware Uses Solana Dead Drops to Deliver RAT and Steal Browser, Crypto Data
+URL: https://thehackernews.com/2026/03/glassworm-malware-uses-solana-dead.html
+--------------------------------------------------------------------------------
+Cybersecurity researchers have flagged a new evolution of the GlassWorm campaign that delivers a multi-stage framework capable of comprehensive data theft and installing a remote access trojan (RAT), which deploys an information-stealing Google Chrome extension masquerading as an offline version of Google Docs.
+
+"It logs keystrokes, dumps cookies and session tokens, captures screenshots, and takes commands from a C2 server hidden in a Solana blockchain memo," Aikido security researcher Ilyas Makari
+
+said
+
+in a report published last week.
+
+GlassWorm
+
+is the moniker assigned to a
+
+persistent campaign
+
+that obtains an initial foothold through rogue packages published across npm, PyPI, GitHub, and the Open VSX marketplace. In addition, the operators are known to compromise the accounts of project maintainers to push poisoned updates.
+
+The attacks are careful enough to avoid infecting systems with a Russian locale and use Solana transactions as a dead drop resolver to fetch the command-and-control (C2) server ("45.32.150[.]251") and download operating system-specific payloads.
+
+The stage two payload is a data-theft framework with credential harvesting, cryptocurrency wallet exfiltration, and system profiling capabilities. The collected data is compressed into a ZIP archive and exfiltrated to an external server ("217.69.3[.]152/wall"). It also incorporates functionality to retrieve and launch the final payload.
+
+Once the data is transmitted, the attack chain involves fetching two additional components: a .NET binary that is designed to carry out hardware wallet phishing and a Websocket-based JavaScript RAT to siphon web browser data and run arbitrary code. The RAT payload is fetched from "45.32.150[.]251" by using a public Google Calendar event URL as a dead drop resolver.
+
+The .NET binary leverages the Windows Management Instrumentation (WMI) infrastructure to detect USB device connections and displays a phishing window when a Ledger or Trezor hardware wallet is plugged in.
+
+"The Ledger UI displays a fake configuration error and presents 24 numbered recovery phrase input fields," Makari noted. "The Trezor UI displays a fake "Firmware validation failed, initiating emergency reboot" message with the same 24-word input layout. Both windows include a 'RESTORE WALLET' button."
+
+The malware not only kills any real Ledger Live processes running on the Windows host, but also re-displays the phishing window if the victim closes it. The end goal of the attack is to capture the wallet recovery phrase and transmit it to the IP address "45.150.34[.]158."
+
+The RAT, on the other hand, uses a Distributed Hash Table (
+
+DHT
+
+) to retrieve the C2 details. In the event the mechanism returns no value, the malware switches to the Solana-based dead drop. The RAT then establishes communication with the server to run various commands on the compromised system -
+
+start_hvnc / stop_hvnc, to deploy a Hidden Virtual Network Computing (HVNC) module for remote desktop access.
+
+start_socks / stop_socks, to launch a WebRTC module and run it as a SOCKS proxy.
+
+reget_log, to steal data from web browsers, such as Google Chrome, Microsoft Edge, Brave, Opera, Opera GX, Vivaldi, and Mozilla Firefox. The component is equipped to bypass Chrome's app-bound encryption (
+
+ABE
+
+) protections.
+
+get_system_info, to send system information.
+
+command, to execute attacker-supplied JavaScript via eval().
+
+The RAT also force-installs a Google Chrome extension named Google Docs Offline on Windows and macOS systems, which then connects to a C2 server and receives commands issued by the operator, allowing to gather cookies, localStorage, the full Document Object Model (
+
+DOM
+
+) tree of the active tab, bookmarks, screenshots, keystrokes, clipboard content, up to 5,000 browser history entries, and the installed extensions list.
+
+"The extension also performs targeted session surveillance. It pulls monitored site rules from /api/get-url-for-watch and ships with Bybit (.bybit.com) pre-configured as a target, watching for the secure-token and deviceid cookies," Aikido said. "On detection, it fires an auth-detected webhook to /api/webhook/auth-detected containing the cookie material and page metadata. The C2 can also supply redirect rules that force active tabs to attacker-controlled URLs."
+
+The discovery coincides with yet another shift in GlassWorm tactics, with the attackers publishing npm packages impersonating the WaterCrawl Model Context Protocol (MCP) server ("@iflow-mcp/watercrawl-watercrawl-mcp) to distribute malicious payloads.
+
+"This is GlassWorm's first confirmed move into the MCP ecosystem," Koi security researcher Lotan Sery
+
+said
+
+. "And given how fast AI-assisted development is growing – and how much trust MCP servers are given by design – this won't be the last."
+
+Developers are advised to exercise caution when it comes to installing Open VSX extensions, npm packages, and MCP servers. It's also recommended to verify publisher names, package histories, and avoid blindly trusting download counts. Polish cybersecurity company AFINE has
+
+published
+
+an open-source Python tool called
+
+glassworm-hunter
+
+to scan developer systems for payloads associated with the campaign.
+
+"Glassworm-hunter makes zero network requests during scanning," researchers Paweł Woyke and Sławomir Zakrzewski said. "No telemetry. No phone-home. No automatic update checks. It reads local files only. Glassworm-hunter update is the only command that touches the network. It fetches the latest
+
+IoC database from our GitHub
+
+and saves it locally."
+
+Found this article interesting?  Follow us on
+
+Google News
+
+,
+
+Twitter
+
+and
+
+LinkedIn
+
+to read more exclusive content we post.
+
+================================================================================
+
+Title: Malicious npm Package Posing as OpenClaw Installer Deploys RAT, Steals macOS Credentials
+URL: https://thehackernews.com/2026/03/malicious-npm-package-posing-as.html
+--------------------------------------------------------------------------------
+Cybersecurity researchers have discovered a malicious npm package that masquerades as an
+
+OpenClaw
+
+installer to deploy a remote access trojan (RAT) and steal sensitive data from compromised hosts.
+
+The package, named "
+
+@openclaw-ai/openclawai
+
+," was uploaded to the registry by a user named "openclaw-ai" on March 3, 2026. It has been downloaded 178 times to date. The library is still available for download as of writing.
+
+JFrog, which discovered the package, said it's designed to steal system credentials, browser data, crypto wallets, SSH keys, Apple Keychain databases, and iMessage history, as well as install a persistent RAT with remote access capabilities, SOCKS5 proxy, and live browser session cloning. It's tracking the activity under the name GhostClaw.
+
+"The attack is notable for its broad data collection, its use of social engineering to harvest the victim's system password, and the sophistication of its persistence and C2 [command-and-control] infrastructure," security researcher Meitar Palas
+
+said
+
+. "Internally, the malware identifies itself as GhostLoader."
+
+The malicious logic is triggered by means of a postinstall hook, which
+
+re-installs the package globally
+
+using the command: "npm i -g @openclaw-ai/openclawai." Once the installation is complete, the OpenClaw binary points to "scripts/setup.js" by means of the "bin" property in the "package.json" file.
+
+It's worth noting that the "
+
+bin
+
+" field is used to define executable files that should be added to the user's PATH during package installation. This, in turn, turns the package into a globally accessible command-line tool.
+
+The file "setup.js" serves as the first-stage dropper that, upon running, displays a convincing fake command-line interface with animated progress bars to give the impression that OpenClaw is being installed on the host. After the purported installation step is complete, the script shows a bogus iCloud Keychain authorization prompt, asking users to enter their system password.
+
+Simultaneously, the script retrieves an encrypted second-stage JavaScript payload from the C2 server ("trackpipe[.]dev"), which is then decoded, written to a temporary file, and spawned as a detached child process to continue running in the background. The temp file is deleted after 60 seconds to cover up traces of the activity.
+
+"If the Safari directory is inaccessible (no Full Disk Access), the script displays an AppleScript dialog urging the user to grant FDA to Terminal, complete with step-by-step instructions and a button that opens System Preferences directly," JFrog explained. "This enables the second-stage payload to steal Apple Notes, iMessage, Safari history, and Mail data."
+
+The JavaScript second-stage, featuring about 11,700 lines, is a full-fledged information stealer and RAT framework that's capable of persistence, data collection, browser decryption, C2 communication, a SOCKS5 proxy, and live browser cloning. It's also equipped to steal a wide range of data -
+
+macOS Keychain, including both the local login.keychain-db and all iCloud Keychain databases
+
+Credentials, cookies, credit cards, and autofill data from all Chromium-based browsers, such as Google Chrome, Microsoft Edge, Brave, Vivaldi, Opera, Yandex, and Comet
+
+Data from desktop wallet applications and browser extensions
+
+Cryptocurrency wallet seed phrases
+
+SSH keys
+
+Developer and cloud credentials for AWS, Microsoft Azure, Google Cloud, Kubernetes, Docker, and GitHub
+
+Artificial intelligence (AI) agent configurations, and
+
+Data protected by the FDA, including Apple Notes, iMessage history, Safari browsing history, Mail account configurations, and Apple account information
+
+In the final stage, the collected data is compressed into a tar.gz archive and exfiltrated through multiple channels, including directly to the C2 server, Telegram Bot API, and GoFile.io.
+
+What's more, the malware enters a persistent daemon mode that allows it to monitor clipboard content every three seconds and transmit any data that matches one of the nine pre-defined patterns corresponding to private keys,
+
+WIF key
+
+, SOL private key, RSA private key, BTC address, Ethereum address, AWS key, OpenAI key, and Strike key.
+
+Other features include keeping tabs on running processes, scanning incoming iMessage chats in real-time, and executing commands sent from the C2 server to run arbitrary shell command, open a URL on the victim's default browser, download additional payloads, upload files, start/stop a SOCKS5 proxy, list available browsers, clone a browser profile and launch it in headless mode, stop the browser clone, self-destruct, and update itself.
+
+The browser cloning function is particularly dangerous as it launches a headless Chromium instance with the existing browser profile that contains cookies, login, and history data. This gives the attacker a fully authenticated browser session without the need for accessing credentials.
+
+"The @openclaw-ai/openclawai package combines social engineering, encrypted payload delivery, broad data collection, and a persistent RAT into a single npm package," JFrog said.
+
+"The polished fake CLI installer and Keychain prompt are convincing enough to extract system passwords from cautious developers, and once captured, those credentials unlock macOS Keychain decryption and browser credential extraction that would otherwise be blocked by OS-level protections."
+
+Update
+
+The package has been removed from the npm registry as of March 10, 2026.
+
+Found this article interesting?  Follow us on
+
+Google News
+
+,
+
+Twitter
+
+and
+
+LinkedIn
+
+to read more exclusive content we post.
+
+================================================================================
+
+Title: Starkiller Phishing Suite Uses AitM Reverse Proxy to Bypass Multi-Factor Authentication
+URL: https://thehackernews.com/2026/03/starkiller-phishing-suite-uses-aitm.html
+--------------------------------------------------------------------------------
+Cybersecurity researchers have disclosed details of a new phishing suite called
+
+Starkiller
+
+that proxies legitimate login pages to bypass multi-factor authentication (MFA) protections.
+
+It's advertised as a cybercrime platform by a threat group calling itself Jinkusu, granting customers access to a dashboard that lets them select a brand to impersonate or enter a brand's real URL. It also lets users choose custom keywords like "login," "verify," "security," or "account," and integrates URL shorteners such as TinyURL to obscure the destination URL.
+
+"It launches a
+
+headless Chrome instance
+
+– a browser that operates without a visible window – inside a
+
+Docker container
+
+, loads the brand's real website, and acts as a reverse proxy between the target and the legitimate site," Abnormal researchers Callie Baron and Piotr Wojtyla
+
+said
+
+.
+
+"Recipients are served genuine page content directly through the attacker's infrastructure, ensuring the phishing page is never out of date. And because Starkiller proxies the real site live, there are no template files for security vendors to fingerprint or blocklist."
+
+This login page proxying technique obviates the need for attackers to update their phishing page templates periodically as the real pages they're impersonating get updated.
+
+Put differently, the container acts as an AitM reverse proxy, forwarding the end user's inputs entered on the spoofed live page to the legitimate site and returning the site's responses. Under the hood, every keystroke, form submission, and session token is routed through attacker-controlled infrastructure and is captured for account takeover.
+
+"The platform streamlines phishing operations by centralizing infrastructure management, phishing page deployment, and session monitoring within a single control panel," Abnormal said. "Combined with URL masking, session hijacking, and MFA bypass, it gives low-skill cybercriminals access to attack capabilities that were previously out of reach."
+
+The development comes as Datadog revealed that the 1Phish kit had evolved from a basic credential harvester in September 2025 into a multi-stage phishing kit targeting 1Password users.
+
+The updated version of the kit incorporates a pre-phishing fingerprint and validation layer, support for capturing one-time passcodes (OTPs) and recovery codes, and browser fingerprinting logic to filter out bots.
+
+"This progression reflects deliberate iteration rather than simple template reuse," security researcher Martin McCloskey
+
+said
+
+. "Each version builds upon the previous one, introducing controls designed to increase conversion rates, reduce automated analysis, and support secondary authentication harvesting."
+
+The findings show that turkey solutions like Starkiller and 1Phish are increasingly turning phishing into SaaS-style workflows, further lowering the skill barrier necessary to pull off such attacks at scale.
+
+They also coincide with a sophisticated phishing campaign targeting North American businesses and professionals by abusing the OAuth 2.0 device authorization grant flow to sidestep multi-factor authentication (MFA) and compromise Microsoft 365 accounts.
+
+To achieve this, the attacker registers on the Microsoft OAuth application and generates a unique
+
+device code
+
+, which is then delivered to the victim via a targeted phishing email.
+
+"The victim is directed to the legitimate Microsoft domain (microsoft.com/devicelogin) portal to enter an
+
+attacker-supplied device code
+
+," researchers Jeewan Singh Jalal, Prabhakaran Ravichandhiran, and Anand Bodke
+
+said
+
+. "This action authenticates the victim and issues a valid OAuth access token to the attacker's application. The real-time theft of these tokens grants the attacker persistent access to the victim's Microsoft 365 accounts and corporate data."
+
+In recent months, phishing campaigns have also targeted financial institutions, specifically U.S.-based banks and credit unions, to harvest credentials. The campaign is said to have taken place over two distinct phases, an initial wave beginning in late June 2025 and a more sophisticated set of attacks beginning in mid-November 2025.
+
+"The actors began registering [.]co[.]com domains spoofing financial institution websites, presenting credible impersonations of real financial institutions," BlueVoyant researchers Shira Reuveny and Joshua Green
+
+said
+
+. "These [.]co[.]com domains serve as the initial entry point in a refined multi-stage chain."
+
+The domain, when visited from a clickable link in a phishing email, is designed to load a fraudulent Cloudflare CAPTCHA page that mimics the targeted institution. The CAPTCHA is non-functional and creates a deliberate delay before a Base64-encoded script redirects users to the credential harvesting page.
+
+In an effort to evade detection and prevent automated scanners from flagging the malicious content, directly accessing the [.]co[.]com domains trigger a redirect to a malformed "www[.]www" URL.
+
+"The adversary's deployment of a more advanced multi-layered evasion chain – incorporating referrer validation, cookie-based access controls, intentional delays, and code obfuscation – effectively creates a more resilient infrastructure that presents barriers for automated security tools and manual analysis," BlueVoyant said.
+
+Found this article interesting?  Follow us on
+
+Google News
+
+,
+
+Twitter
+
+and
+
+LinkedIn
+
+to read more exclusive content we post.
+
+================================================================================
+
+Title: Claude Extension Flaw Enabled Zero-Click XSS Prompt Injection via Any Website
+URL: https://thehackernews.com/2026/03/claude-extension-flaw-enabled-zero.html
+--------------------------------------------------------------------------------
+Cybersecurity researchers have disclosed a vulnerability in Anthropic's Claude Google Chrome Extension that could have been exploited to trigger malicious prompts simply by visiting a web page.
+
+The flaw "allowed any website to silently inject prompts into that assistant as if the user wrote them," Koi Security researcher Oren Yomtov
+
+said
+
+in a report shared with The Hacker News. "No clicks, no permission prompts. Just visit a page, and an attacker completely controls your browser."
+
+The issue, codenamed
+
+ShadowPrompt
+
+, chains two underlying flaws:
+
+An overly permissive origin allowlist in the extension that allowed any subdomain matching the pattern (*.claude.ai) to send a prompt to Claude for execution.
+
+A document object model (
+
+DOM
+
+)-based cross-site scripting (
+
+XSS
+
+) vulnerability in an Arkose Labs CAPTCHA component hosted on "a-cdn.claude[.]ai."
+
+Specifically, the XSS vulnerability enables the execution of arbitrary JavaScript code in the context of "a-cdn.claude[.]ai." A threat actor could leverage this behavior to inject JavaScript that issues a prompt to the Claude extension.
+
+The extension, for its part, allows the prompt to land in Claude's sidebar as if it's a legitimate user request simply because it comes from an allow-listed domain.
+
+"The attacker's page embeds the vulnerable Arkose component in a hidden <iframe>, sends the XSS payload via postMessage, and the injected script fires the prompt to the extension," Yomtov explained. "The victim sees nothing."
+
+Successful exploitation of this vulnerability could allow the adversary to steal sensitive data (e.g., access tokens), access conversation history with the AI agent, and even perform actions on behalf of the victim (e.g., sending emails impersonating them, asking for confidential data).
+
+Following responsible disclosure on December 27, 2025, Anthropic deployed a patch to the Chrome extension (version 1.0.41) that enforces a strict origin check requiring an exact match to the domain "claude[.]ai." Arkose Labs has since fixed the XSS flaw at its end as of February 19, 2026.
+
+"The more capable AI browser assistants become, the more valuable they are as attack targets," Koi said. "An extension that can navigate your browser, read your credentials, and send emails on your behalf is an autonomous agent. And the security of that agent is only as strong as the weakest origin in its trust boundary."
+
+Found this article interesting?  Follow us on
+
+Google News
+
+,
+
+Twitter
+
+and
+
+LinkedIn
+
+to read more exclusive content we post.
+
+================================================================================
+
+Title: Researchers Trick Perplexity's Comet AI Browser Into Phishing Scam in Under Four Minutes
+URL: https://thehackernews.com/2026/03/researchers-trick-perplexitys-comet-ai.html
+--------------------------------------------------------------------------------
+Agentic web browsers that leverage artificial intelligence (AI) capabilities to autonomously execute actions across multiple websites on behalf of a user could be trained and tricked into falling prey to phishing and scam traps.
+
+The attack, at its core, takes advantage of AI browsers' tendency to reason their actions and use it against the model itself to lower their security guardrails, Guardio
+
+said
+
+in a report shared with The Hacker News ahead of publication.
+
+"The AI now operates in real time, inside messy and dynamic pages, while continuously requesting information, making decisions, and narrating its actions along the way. Well, 'narrating' is quite an understatement - It blabbers, and way too much!," security researcher Shaked Chen said.
+
+"This is what we call
+
+Agentic Blabbering
+
+: the AI Browser exposing what it sees, what it believes is happening, what it plans to do next, and what signals it considers suspicious or safe."
+
+By intercepting this traffic between the browser and the AI services running on the vendor's servers and feeding it as input to a Generative Adversarial Network (
+
+GAN
+
+), Guardio said it was able to make Perplexity's Comet AI browser fall victim to a phishing scam in under four minutes.
+
+The research builds on prior techniques like
+
+VibeScamming
+
+and
+
+Scamlexity
+
+, which found that vibe-coding platforms and AI browsers could be coaxed into generating scam pages or carrying out malicious actions via hidden prompt injections. In other words, with the AI agent handling the tasks without constant human supervision, there arises a shift in the attack surface wherein a scam no longer has to deceive a user. Rather, it aims to trick the AI model itself.
+
+"If you can observe what the agent flags as suspicious, hesitates on, and more importantly, what it thinks and blabbers about the page, you can use that as a training signal," Chen explained. "The scam evolves until the AI Browser reliably walks into the trap another AI set for it."
+
+The idea, in a nutshell, is to build a "scamming machine" that iteratively optimizes and regenerates a phishing page until the agentic browser stops complaining and proceeds to carry out the threat actor's bidding, such as entering a victim's credentials on a bogus web page designed for carrying out a refund scam.
+
+What makes this attack interesting and dangerous is that once the fraudster iterates on a web page until it works against a specific AI browser, it works on all users who rely on the same agent. Put differently, the target has shifted from the human user to the AI browser.
+
+"This reveals the unfortunate near future we are facing: scams will not just be launched and adjusted in the wild, they will be trained offline, against the exact model millions rely on, until they work flawlessly on first contact," Guardio said. "Because when your AI Browser explains why it stopped, it teaches attackers how to bypass it."
+
+The disclosure comes as Trail of Bits
+
+demonstrated
+
+four
+
+prompt injection techniques
+
+against the Comet browser to extract users' private information from services like Gmail by exploiting the browser's AI assistant and exfiltrating the data to an attacker’s server when the user asks to summarize a web page under their control.
+
+Last week, Zenity Labs also detailed two zero-click attacks affecting Perplexity's Comet that use
+
+indirect prompt injection
+
+seeded within meeting invites to exfiltrate local files to an external server (aka
+
+PerplexedComet
+
+) or
+
+hijack a user's 1Password account
+
+if the
+
+password manager extension
+
+is installed and unlocked. The issues, collectively codenamed PerplexedBrowser, have since been addressed by the AI company.
+
+This is achieved by means of a prompt injection technique referred to as intent collision, which occurs "when the agent merges a benign user request with attacker-controlled instructions from untrusted web data into a single execution plan, without a reliable way to distinguish between the two," security researcher Stav Cohen said.
+
+Prompt injection attacks remain a fundamental security challenge for large language models (LLMs) and for integrating them into organizational workflows, largely because completely eliminating these vulnerabilities may not be feasible. In December 2025, OpenAI
+
+noted
+
+that such weaknesses are "unlikely to ever" be fully resolved in agentic browsers, although the associated risks could be reduced through automated attack discovery, adversarial training, and new system-level safeguards.
+
+Found this article interesting?  Follow us on
+
+Google News
+
+,
+
+Twitter
+
+and
+
+LinkedIn
+
+to read more exclusive content we post.
+
+================================================================================
+
+Title: How Ceros Gives Security Teams Visibility and Control in Claude Code
+URL: https://thehackernews.com/2026/03/how-ceros-gives-security-teams.html
+--------------------------------------------------------------------------------
+Security teams have spent years building identity and access controls for human users and service accounts. But a new category of actor has quietly entered most enterprise environments, and it operates entirely outside those controls.
+
+Claude Code, Anthropic's AI coding agent, is now running across engineering organizations at scale. It reads files, executes shell commands, calls external APIs, and connects to third-party integrations called MCP servers. It does all of this autonomously, with the full permissions of the developer who launched it, on the developer's local machine, before any network-layer security tool can see it. It leaves no audit trail that the existing security infrastructure was built to capture.
+
+This walkthrough covers Ceros, an AI Trust Layer built by
+
+Beyond Identity
+
+that sits directly on the developer's machine alongside Claude Code and provides real-time visibility, runtime policy enforcement, and a cryptographic audit trail of every action the agent takes.
+
+The Problem: Claude Code Operates Outside Existing Security Controls
+
+Before walking through the product, it helps to understand why existing tools cannot address this problem.
+
+Most enterprise security tooling sits at the network edge or the API gateway. These tools see traffic after it leaves the machine. By the time a SIEM ingests an event or a network monitor flags unusual traffic, Claude Code has already acted: the file has already been read, the shell command has already executed, and the data has already moved.
+
+Claude Code's behavioral profile compounds this problem significantly. It lives off the land, using tools and permissions already on the developer's machine rather than bringing its own. It communicates through external model calls that look like normal traffic. It executes complex sequences of actions that no human explicitly programmed. And it runs with the full inherited permissions of whoever launched it, including access to credentials, production systems, and sensitive data that developers happen to have on their machine.
+
+The result is a gap that network-layer tools structurally cannot close: everything Claude Code does on the local machine, before any request leaves the device. That is where Ceros operates.
+
+Getting Started: Two Commands, Thirty Seconds
+
+Ceros is designed so that installation does not disrupt developer workflow. Setup requires two commands:
+
+curl -fsSL https://agent.beyondidentity.com/install.sh | bash
+
+ceros claude
+
+The first command installs the CLI. The second launches Claude Code through Ceros. A browser window opens, prompts for an email address, and sends a six-digit verification code. After entering the code, Claude Code starts up and works exactly as it did before. From the developer's perspective, nothing has changed.
+
+For organization-wide rollouts, administrators can configure Ceros so that developers are prompted to enroll automatically when they launch Claude Code. Security becomes invisible to the developer, which is the only way security actually gets adopted at scale.
+
+Once enrolled, before Claude Code generates a single token, Ceros captures full device context, including OS, kernel version, disk encryption status, Secure Boot state, and endpoint protection status, all in under 250 milliseconds. It captures the complete process ancestry of how Claude Code was invoked, with binary hashes of every executable in the chain. And it ties the session to a verified human identity through Beyond Identity's platform, signed with a hardware-bound cryptographic key.
+
+The Console: See What Claude Code Has Actually Been Doing
+
+After enrolling a device and running Claude Code normally for a few days, navigating to the Ceros admin console reveals something most security teams have never seen before: a complete record of what Claude Code has actually been doing across their environment.
+
+The Conversations view
+
+shows every session between a developer and Claude Code across all enrolled devices, listed by user, device, and timestamp. Clicking into any conversation shows the full back-and-forth between the developer and the agent. But between the prompts and responses, something else is visible: tool calls.
+
+When a developer asks Claude Code something as simple as "what files are in my directory?", the LLM does not simply know the answer. It instructs the agent to execute a tool on the local machine, in this case bash ls -la. That shell command runs on the developer's device with the developer's permissions. One casual question triggers real execution on a real machine.
+
+The Conversations view surfaces every one of these tool invocations across every session. For most security teams, this is the first time they have seen this data.
+
+The Tools view
+
+has two tabs. The Definitions tab shows every tool available to Claude Code across the enrolled environment, including built-in tools like Bash, ReadFile, WriteFile, Edit, and SearchWeb, as well as every MCP server that developers have connected to their agents. Each entry includes the tool's full schema: the instructions given to the LLM about what the tool does and how to invoke it.
+
+The Calls tab
+
+shows what was actually executed. Not just what exists, but what was invoked, with what arguments, and what was returned. Security teams can drill into any individual tool call and see the exact command that ran, the arguments passed, and the full output that came back.
+
+The MCP Server view
+
+is where many security teams have their most significant discovery moment. MCP servers are how Claude Code connects to external tools and services, including databases, Slack, email, internal APIs, and production infrastructure. Developers add them casually, thinking about productivity rather than security. Each one is a data access path that nobody reviewed.
+
+The Ceros dashboard shows every MCP server connected to Claude Code across all enrolled devices, when it was first seen, which devices it appears on, and whether it has been approved. For most organizations, the gap between what security teams assumed was connected and what is actually connected is significant.
+
+Policies: Enforcing Controls on Claude Code at Runtime
+
+Visibility without governance surfaces risk, but it does not prevent it. The Policies section is where Ceros moves from observability to enforcement, and where the compliance story becomes concrete.
+
+Policies
+
+in Ceros are evaluated at runtime, before the action executes. This distinction matters for compliance: the control operates at the moment of the action, not reconstructed after the fact.
+
+MCP server allowlisting
+
+is the highest-impact policy most organizations write first. Administrators define a list of approved MCP servers and set the default to block everything else. From that point forward, any Claude Code instance attempting to connect to an unapproved MCP server is blocked before the connection is established, and the attempt is logged.
+
+Tool-level policies
+
+allow administrators to control which tools Claude Code can invoke and under what conditions. A policy can block the Bash tool entirely for teams that do not need shell access from their agents. It can allow file reads within the project directory while blocking reads in sensitive paths like ~/.ssh/ or /etc/. The policy engine evaluates not just which tool is being called but what arguments are being passed, which is the difference between a useful policy and policy theater.
+
+Device posture requirements
+
+gate Claude Code sessions on the security state of the machine. A policy can require that disk encryption be enabled and endpoint protection be running before a session is allowed to start. Ceros continuously reassesses device posture throughout the session, not just at login. If endpoint protection is disabled while Claude Code is active, Ceros sees it and acts on it based on policy.
+
+The Activity Log: Audit-Ready Evidence
+
+The Activity Log is where Ceros becomes directly relevant to compliance teams. Every entry is not simply a record; it is a forensic snapshot of the environment at the exact moment Claude Code was invoked.
+
+A single log entry contains the device's full security posture at that moment, the complete process ancestry showing every process in the chain that invoked Claude Code, binary signatures of every executable in that ancestry, the OS-level user identity tied to a verified human, and every action Claude Code took during the session.
+
+This matters for compliance because auditors increasingly require proof that logs are immutable. Standard log files that administrators can edit do not satisfy this requirement. Ceros signs every entry with a hardware-bound cryptographic key before it leaves the machine. The log cannot be modified after the fact.
+
+For frameworks that require tamper-evident audit records, including SOC 2's CC8.1, FedRAMP's AU-9, HIPAA's audit control requirements, and PCI-DSS v4.0's Requirement 10, this is the specific evidence artifact that satisfies the control. When an auditor asks for evidence of monitoring and access controls on AI agents, the answer is an export from the Ceros dashboard covering the full audit period, cryptographically signed, with user attribution and device context on every entry.
+
+Managed MCP Deployment: Standardizing Claude Code's Tooling Across the Org
+
+For organizations that want to standardize the tools available to Claude Code rather than only blocking unapproved ones, Ceros provides managed MCP deployment from the admin console.
+
+Administrators can push approved MCP servers to every developer's Claude Code instance from a single interface, without requiring any developer configuration. The MCP server appears in the developer's agent automatically on the next launch.
+
+Combined with MCP server allowlisting, this creates a complete governance model: administrators define what is required, what is permitted, and what is blocked. Developers work within that envelope without friction.
+
+The Dashboard: Agentic AI Risk Posture Across the Org
+
+Coming up is
+
+The Dashboard
+
+, a single view of AI risk posture across your entire enrolled organization. Where the session-level views tell you what one developer's agent did, the Dashboard tells you what is happening across the fleet: how many devices are provisioned, enrolled, and actively running Claude Code, with automatic flagging when adoption gaps indicate that agents are running outside the Ceros enrollment path and outside your controls.
+
+Sign up
+
+to be notified when The Dashboard ships.
+
+Conclusion
+
+The security gap that Claude Code creates is not at the network edge. It is on the developer's machine, where the agent operates before any existing security tool can see it. Ceros closes that gap by living where the agent lives, capturing everything before it executes, and producing cryptographically signed evidence that security and compliance teams can act on.
+
+For security teams whose organizations have deployed Claude Code and are beginning to reckon with what that means for their audit posture and controls, the starting point is visibility. You cannot govern what you cannot see, and until now, there has been no tooling that could show you what Claude Code was actually doing.
+
+Ceros is available now, and getting started is free. Security teams can enroll a device and see their Claude Code activity for the first time at
+
+beyondidentity.ai
+
+.
+
+Ceros is built by Beyond Identity, which is SOC 2 / FedRAMP compliant and deployable as cloud SaaS, self-hosted, or fully air-gapped on-premises.
+
+Found this article interesting?
+
+This article is a contributed piece from one of our valued partners.
+
+Follow us on
+
+Google News
+
+,
+
+Twitter
+
+and
+
+LinkedIn
+
+to read more exclusive content we post.
+
+================================================================================
+
+Title: WebRTC Skimmer Bypasses CSP to Steal Payment Data from E-Commerce Sites
+URL: https://thehackernews.com/2026/03/webrtc-skimmer-bypasses-csp-to-steal.html
+--------------------------------------------------------------------------------
+Cybersecurity researchers have discovered a new
+
+payment skimmer
+
+that uses
+
+WebRTC data channels
+
+as a means to receive payloads and exfiltrate data, effectively bypassing security controls.
+
+"Instead of the usual HTTP requests or image beacons, this malware uses WebRTC data channels to load its payload and exfiltrate stolen payment data," Sansec
+
+said
+
+in a report published this week.
+
+The attack, which targeted a car maker's e-commerce website, is said to have been facilitated by
+
+PolyShell
+
+, a new vulnerability impacting Magento Open Source and Adobe Commerce that allows unauthenticated attackers to upload arbitrary executables via the REST API and achieve code execution.
+
+Notably, the vulnerability has since come under mass exploitation since March 19, 2026, with more than 50 IP addresses participating in the scanning activity. The Dutch security company said it has found PolyShell attacks on 56.7% of all vulnerable stores.
+
+The skimmer is designed as a self-executing script that establishes a WebRTC peer connection to a hard-coded IP address ("202.181.177[.]177") over UDP port 3479 and retrieves JavaScript code that's subsequently injected into the web page for stealing payment information.
+
+The use of WebRTC marks a significant evolution in skimmer attacks, as it bypasses Content Security Policy (
+
+CSP
+
+) directives.
+
+"A store with a strict CSP that blocks all unauthorized HTTP connections is still wide open to WebRTC-based exfiltration," Sansec noted. "The traffic itself is also harder to detect. WebRTC DataChannels run over DTLS-encrypted UDP, not HTTP. Network security tools that inspect HTTP traffic will never see the stolen data leave."
+
+Adobe released a fix for PolyShell in
+
+version 2.4.9-beta1
+
+released on March 10, 2026. But the patch has yet to reach the production versions.
+
+As mitigations, site owners are recommended to block access to the "pub/media/custom_options/" directory and scan the stores for web shells, backdoors, and other malware.
+
+More Details About PolyShell Emerge
+
+The development comes as Searchlight Cyber's Assetnote team
+
+shared
+
+additional details of the PolyShell vulnerability, stating it's rooted in a function named ImageProcessor::processImageContent(), which accepts any "valid" image as input and move the file to destination folder (i.e., "pub/media/custom_options/quote/<FIRST_CHAR>/<SECOND_CHAR>/<FILE_NAME>").
+
+As for what constitutes a valid image, the code checks that it's not empty, has a size, has a valid MIME type, and does not have blocked characters in its file name. In other words, there is no validation to ensure that the file extension actually matches the MIME type.
+
+This allows an attacker to upload a polyglot shell via an HTTP POST request to the "/rest/default/V1/guest-carts/{cart_id}/items" endpoint and invoke that file to achieve code execution. An important caveat here is that the uploaded file is only accessible if the web server is misconfigured; any attempt to access it will result in a 404 error message.
+
+"If you're using Adobe’s suggested Nginx/Apache configurations, then the files are inaccessible and not executable," security researcher Tomais Williamson said. "However, any deviations from this configuration (or missing .htaccess files) may lead to instances being impacted."
+
+"For Nginx instances, Magento ships with an example configuration file that should block access to the folders and any uploaded PHP files. Deviations from this configuration that remove the deny all clauses locations affecting the pub/media/custom_options path can lead to XSS, and removing .php execution restrictions will lead to those files being executable."
+
+(The story was updated after publication to include insights from Searchlight Cyber about PolyShell.)
+
+Found this article interesting?  Follow us on
+
+Google News
+
+,
+
+Twitter
+
+and
+
+LinkedIn
+
+to read more exclusive content we post.
+
+================================================================================
+
+Title: Claude Code Security and Magecart: Getting the Threat Model Right
+URL: https://thehackernews.com/2026/03/claude-code-security-and-magecart.html
+--------------------------------------------------------------------------------
+When a Magecart payload hides inside the EXIF data of a dynamically loaded third-party favicon, no repository scanner will catch it – because the malicious code never actually touches your repo. As teams adopt Claude Code Security for static analysis, this is the exact technical boundary where AI code scanning stops and client-side runtime execution begins.
+
+A detailed analysis of where Claude Code Security stops — and what runtime monitoring covers — is available
+
+here
+
+.
+
+A
+
+Magecart skimmer
+
+recently found in the wild used a three-stage loader chain to hide its payload inside a favicon's EXIF metadata — never touching the merchant's source code, never appearing in a repository, and executing entirely in the shopper's browser at checkout. The attack raises a question that’s worth getting precise about: which category of tool is actually supposed to catch this?
+
+Magecart Lives Outside Your Codebase
+
+Magecart‑style attacks are rarely about classic vulnerabilities in your own source code. They are supply chain infiltrations. The malicious JavaScript typically arrives via compromised third‑party assets: tag managers, payment/checkout widgets, analytics tools, CDN‑hosted scripts, and images that are loaded into the browser at runtime. The victim organization didn't write that code, doesn't review it in PRs, and it often doesn't exist in their repository at all.
+
+That means a repository‑based static analysis tool, such as Claude Code Security, is therefore limited by design in this scenario, because it can only analyze what's in the repo or what you explicitly feed it. Any skimmer that lives solely in modified third‑party resources or dynamically loaded binaries in production never enters its field of view. That's not a bug in the product; it's a scope mismatch.
+
+The Attack Flow: How the Skimmer Hides
+
+Here is the initial loader seen on compromised websites:
+
+This stub dynamically loads a script from what appears to be a legitimate Shopify CDN URL. The loaded script then constructs the actual malicious URL using obfuscated index arrays:
+
+Once decoded, this points to //b4dfa5[.]xyz/favicon.ico. What happens next is where the technique gets interesting: the script retrieves the favicon as binary data, parses the EXIF metadata to extract a malicious string, and executes it via new Function() — the payload lives inside image metadata, so it’s invisible to anything that isn't watching the browser at runtime.
+
+The final exfiltration call POSTs stolen payment data silently to an attacker-controlled server:
+
+The chain has four properties that matter for the tooling discussion that follows: the initial loader looks like a benign third-party include; the payload is hidden in binary image metadata; exfiltration happens directly from the shopper's browser; and none of it requires touching the merchant's own source code.
+
+What Claude Code Security Can and Can't See
+
+Claude Code Security is designed to scan codebases, trace data flows, and suggest fixes for vulnerabilities in the code you or your teams write. That makes it useful for securing first‑party applications, but it also defines its blind spots for this attack class.
+
+In this scenario, it has no practical visibility into malicious code that’s only injected into third‑party, CDN, or tag‑manager‑hosted scripts that are never stored in your repos. It can’t interrogate payloads hidden in binary assets like favicons or images that are not part of your source tree either. It can’t assess the risk or live reputation of attacker‑controlled domains that only appear at runtime, and real‑time detection of anomalous browser‑side network requests during checkout is also beyond its scope.
+
+Where it could contribute (though not as the primary control) would be in cases where your own code contains dynamic script‑injection logic, a pattern that a code analysis tool may flag as risky. And if first‑party code hard‑codes suspicious exfiltration endpoints or uses unsafe data‑collection logic, static analysis can highlight those flows for review.
+
+The top four rows are what matter most in a Magecart scenario, and Claude Code Security has no runtime visibility into any of them.
+
+The bottom two represent a fundamentally different threat: a developer accidentally writing malicious-looking code in their own repository.
+
+Magecart is One Vector, Not the Whole Attack Surface
+
+The favicon steganography technique above is sophisticated, but it's one instance of a broader pattern. Web supply chain attacks arrive through several distinct mechanisms, each with the same defining characteristic: the malicious activity happens at runtime, in the browser, through assets the merchant didn't create.
+
+See how AI-generated, polymorphic JavaScript is raising the stakes →
+
+A few others worth naming:
+
+Malicious iframe injection.
+
+A compromised third-party widget silently overlays a legitimate checkout form with an attacker-controlled iframe. The user sees the real page, but their keystrokes are sent to the attacker. Nothing in the merchant's repository changes.
+
+Pixel tracker abuse.
+
+Analytics and advertising pixels — nearly universal on e-commerce sites — are loaded from external CDNs. When those CDNs are compromised or the pixel provider itself is breached, the tracking code running on every page becomes an exfiltration channel. The merchant's code still calls the same legitimate-looking endpoint it always did.
+
+DOM-based credential harvesting.
+
+A script loaded via a tag manager silently listens for form field events on login or payment pages, capturing data before it's ever submitted. The attack lives entirely in the event handler registered at runtime, not in anything a static scanner would ever see.
+
+Each of these follows the same logic as the Magecart case: the threat lives outside the repository, executes in a context that static analysis cannot observe, and targets the gap between what you shipped and what actually runs in your users' browsers. You can find the
+
+full breakdown
+
+of how each vector maps to tooling coverage — and what a defense-in-depth program looks like across all of them — in the guide linked below.
+
+Why Runtime Monitoring Is Critical (But Not the Only Control)
+
+For
+
+web supply chain threats
+
+like this Magecart campaign, continuous monitoring of what actually runs in users' browsers is the primary layer with direct visibility into the attack as it happens. Client‑side runtime monitoring platforms answer a couple of questions that static tools cannot:
+
+"What code is executing in my users' browsers right now, and what is it doing?"
+
+At the same time, runtime monitoring is only one part of the picture. It works best as part of a defense‑in‑depth strategy. Static analysis and supply‑chain governance reduce the attack surface, while runtime monitoring catches what slips through, and what lives entirely outside your repos.
+
+Reframing the "Test": Category, Not Capability
+
+Evaluating a repo-centric tool like Claude Code Security against a runtime attack is a category error, not a product failure. It's like expecting a smoke detector to put out fires. It’s the wrong tool for that job, but the ideal one for what it was designed to do. For a fire-safe building, you need smoke detectors and fire extinguishers, and for a safe website, you need Claude Code Security and runtime monitoring in your stack. For Magecart and similar client‑side skimming attacks, you need that runtime window into the browser. Static repository scanning, by itself, simply doesn't see where these attacks truly live.
+
+If you're mapping tooling to threat classes at the CISO level, we’ve put together a short guide on how code security and runtime monitoring fit together across the full range of web supply chain vectors — and where each one stops being useful.
+
+CISO's Guide to Claude Code Security →
+
+Found this article interesting?
+
+This article is a contributed piece from one of our valued partners.
+
+Follow us on
+
+Google News
+
+,
+
+Twitter
+
+and
+
+LinkedIn
+
+to read more exclusive content we post.
+
+================================================================================
+

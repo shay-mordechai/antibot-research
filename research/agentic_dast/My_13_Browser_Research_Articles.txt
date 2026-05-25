@@ -1,0 +1,116 @@
+=== MY 13 TARGETED BROWSER SECURITY ARTICLES ===
+
+Title: AitM Phishing Targets TikTok Business Accounts Using Cloudflare Turnstile Evasion
+URL: https://thehackernews.com/2026/03/aitm-phishing-targets-tiktok-business.html
+--------------------------------------------------------------------------------
+Threat actors are using adversary-in-the-middle (AitM) phishing pages to seize control of TikTok for Business accounts in a new campaign, according to a report from Push Security.
+
+Business accounts associated with social media platforms are a lucrative target, as they can be
+
+weaponized by bad actors
+
+for malvertising and distributing malware.
+
+"TikTok has been historically abused to distribute malicious links and social engineering instructions," Push Security
+
+said
+
+. "This includes multiple infostealers like Vidar, StealC, and Aura Stealer delivered via ClickFix-style instructions with AI-generated videos posed as activation guides for Windows, Spotify, and CapCut."
+
+The campaign begins with tricking victims into clicking on a malicious link that directs them to either a lookalike page impersonating TikTok for Business or a page that's designed to impersonate Google Careers, along with an option to schedule a call to discuss the opportunity.
+
+It's worth noting that a prior iteration of this credential phishing campaign was
+
+flagged
+
+by Sublime Security in October 2025, with emails masquerading as outreach messages used as a social engineering tactic.
+
+Regardless of the type of page served, the end goal is the same: perform a Cloudflare Turnstile check to block bots and automated scanners from analyzing the contents of the page and serve a malicious AitM phishing page login page that's designed to steal their credentials.
+
+The phishing pages are hosted on the following domains -
+
+welcome.careerscrews[.]com
+
+welcome.careerstaffer[.]com
+
+welcome.careersworkflow[.]com
+
+welcome.careerstransform[.]com
+
+welcome.careersupskill[.]com
+
+welcome.careerssuccess[.]com
+
+welcome.careersstaffgrid[.]com
+
+welcome.careersprogress[.]com
+
+welcome.careersgrower[.]com
+
+welcome.careersengage[.]com
+
+welcome.careerscrews[.]com
+
+The development comes as another phishing campaign has been observed using Scalable Vector Graphics (SVG) file attachments to deliver malware to targets located in Venezuela.
+
+According to a report published by WatchGuard, the messages have SVG files with file names in Spanish, masquerading as invoices, receipts, or budgets.
+
+"When these malicious SVGs are opened, they communicate with a URL that downloads the malicious artifact," the company
+
+said
+
+. "This campaign uses ja.cat to shorten URLs from legitimate domains that have a vulnerability that allows redirects to any URL, so they point to the original domain where the malware is downloaded."
+
+The downloaded artifact is a malware written in Go that shares overlaps with a
+
+BianLian
+
+ransomware sample
+
+detailed by SecurityScorecard
+
+in January 2024.
+
+"This campaign is a strong reminder that even seemingly harmless file types like SVGs can be used to deliver serious threats," WatchGuard said. "In this case, malicious SVG attachments were used to initiate a phishing chain that led to malware delivery associated with
+
+BianLian
+
+activity."
+
+Found this article interesting?  Follow us on
+
+Google News
+
+,
+
+Twitter
+
+and
+
+LinkedIn
+
+to read more exclusive content we post.
+
+================================================================================
+
+Title: https://thehackernews.com/2026/03/apple-fixes-webkit-vulnerability.html
+URL: https://thehackernews.com/2026/03/apple-fixes-webkit-vulnerability.html
+--------------------------------------------------------------------------------
+[!] Could not find the article body. Playwright might be blocked by Cloudflare/Anti-Bot!
+
+================================================================================
+
+Title: https://thehackernews.com/2026/03/google-fixes-two-chrome-zero-days.html
+URL: https://thehackernews.com/2026/03/google-fixes-two-chrome-zero-days.html
+--------------------------------------------------------------------------------
+[!] Could not find the article body. Playwright might be blocked by Cloudflare/Anti-Bot!
+
+================================================================================
+
+Title: https://thehackernews.com/2026/03/new-chrome-vulnerability-extensions.html
+URL: https://thehackernews.com/2026/03/new-chrome-vulnerability-extensions.html
+--------------------------------------------------------------------------------
+[!] Could not find the article body. Playwright might be blocked by Cloudflare/Anti-Bot!
+
+================================================================================
+

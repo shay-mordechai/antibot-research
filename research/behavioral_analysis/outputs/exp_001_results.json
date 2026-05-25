@@ -1,0 +1,16 @@
+[
+    {
+        "method": "Playwright_Headless",
+        "engine": "V8_Renderer",
+        "status": 200,
+        "blocked": false,
+        "time_elapsed": 2.33
+    },
+    {
+        "method": "Curl_CFFI_Impersonation",
+        "engine": "Network_JA3",
+        "status": 200,
+        "blocked": false,
+        "time_elapsed": 0.11
+    }
+]
