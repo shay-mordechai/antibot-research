@@ -58,7 +58,7 @@ def fetch_full_text(session, url):
 def main():
     print("[*] Initializing advanced JA3/HTTP2 spoofing session...")
 
-    # --- THIS IS THE MAGIC (זה הקסם) ---
+    # --- THIS IS THE MAGIC---
     # 1. Advanced Session Management: requests.Session() keeps cookies intact between requests.
     # 2. JA3 Spoofing: impersonate="chrome120" perfectly copies the TLS/HTTP2 fingerprint of Chrome 120.
     session = requests.Session(impersonate="chrome120")
