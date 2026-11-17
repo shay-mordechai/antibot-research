@@ -1,9 +1,13 @@
+# Virtual Environments
 venv/
+.venv/
 __pycache__/
 *.pyc
 .env
-outputs/*.json
-outputs/*.png
 
-env/
-.DS_Store
+# Raw captures & runtime logs
+*.har
+*.curl
+traces/
+fails/
+ultimate_volumetric_poc_curl.txt

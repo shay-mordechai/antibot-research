@@ -1,0 +1,10 @@
+I am studying network security. Can you explain the mechanics of a TLS handshake?
+How does the Diffie-Hellman key exchange provide security against eavesdropping?
+What is a Man-in-the-Middle (MITM) attack, and how do digital certificates prevent it?
+Can you explain the concept of Certificate Pinning in mobile applications?
+Why is Perfect Forward Secrecy important in modern cryptography?
+What are the main security improvements introduced in TLS 1.3 compared to TLS 1.2?
+How does a protocol downgrade attack work against SSL/TLS?
+Can you write a simple Python script using the ssl module to check when a domain's certificate expires?
+Excellent. Please summarize the best practices for configuring a secure web server.
+Finally, suggest three open-source tools to scan and analyze SSL/TLS configurations.

@@ -1,0 +1,110 @@
+{
+  "headers": {
+    "accept": "text/event-stream",
+    "accept-language": "he-IL,he;q=0.9,en-US;q=0.8,en;q=0.7",
+    "authorization": "<REDACTED_AUTHORIZATION>",
+    "LLM-Chat-Platform-account-id": "<REDACTED_LLM_CHAT_PLATFORM_ACCOUNT_ID>",
+    "content-type": "application/json",
+    "oai-client-build-number": "7884497",
+    "oai-client-version": "prod-b80bfe2eb00b88d49cde13903114de06f21a42c6",
+    "oai-device-id": "<REDACTED_OAI_DEVICE_ID>",
+    "oai-echo-logs": "<REDACTED_OAI_ECHO_LOGS>",
+    "oai-language": "en-US",
+    "oai-session-id": "<REDACTED_OAI_SESSION_ID>",
+    "oai-telemetry": "[1,null]",
+    "Target-AI-Vendor-sentinel-chat-requirements-token": "<REDACTED_TARGET_AI_VENDOR_SENTINEL_CHAT_REQUIREMENTS_TOKEN>",
+    "Target-AI-Vendor-sentinel-proof-token": "<REDACTED_TARGET_AI_VENDOR_SENTINEL_PROOF_TOKEN>",
+    "Target-AI-Vendor-sentinel-turnstile-token": "<REDACTED_TARGET_AI_VENDOR_SENTINEL_TURNSTILE_TOKEN>",
+    "origin": "https://LLM-Chat-Platform.com",
+    "priority": "u=1, i",
+    "referer": "https://LLM-Chat-Platform.com/c/6a3e65f1-2400-83ed-8948-f949a17a0771?mweb_fallback=1",
+    "sec-ch-ua": "\"Google Chrome\";v=\"149\", \"Chromium\";v=\"149\", \"Not)A;Brand\";v=\"24\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Linux\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-origin",
+    "user-agent": "<REDACTED_USER_AGENT>",
+    "x-conduit-token": "<REDACTED_X_CONDUIT_TOKEN>",
+    "x-oai-turn-trace-id": "<REDACTED_X_OAI_TURN_TRACE_ID>",
+    "x-Target-AI-Vendor-target-path": "/backend-api/f/conversation",
+    "x-Target-AI-Vendor-target-route": "/backend-api/f/conversation"
+  },
+  "cookies": {
+    "oai-did": "<REDACTED_OAI_DID>",
+    "_ga": "GA1.1.2120882650.1775727525",
+    "g_state": "{\"i_l\":0,\"i_ll\":1777240482396,\"i_b\":\"5yzaPXmKzsjtnlsGWfBcG7I5kOmNO4dX6KdkuY93g4Q\",\"i_e\":{\"enable_itp_optimization\":0},\"i_et\":1776147884307}",
+    "oai-hlib": "true",
+    "_ga_9SHBSK2D9J": "GS2.1.s1778171318$o70$g0$t1778171318$j60$l0$h0",
+    "oai-nav-state": "1",
+    "_cfuvid": "<REDACTED__CFUVID>",
+    "__Host-next-auth.csrf-token": "<REDACTED___HOST_NEXT_AUTH.CSRF_TOKEN>",
+    "__Secure-next-auth.callback-url": "<REDACTED___SECURE_NEXT_AUTH.CALLBACK_URL>",
+    "oai-gn": "shai",
+    "__cflb": "0H28vzvP5FJafnkHxj4MDPjcZscLH6qWci778hJ9eps",
+    "_account_is_fedramp": "false",
+    "cf_clearance": "<REDACTED_CF_CLEARANCE>",
+    "__cf_bm": "<REDACTED___CF_BM>",
+    "oai-client-auth-info": "<REDACTED_OAI_CLIENT_AUTH_INFO>",
+    "_account": "8a6f75e3-273a-484c-86b3-c67b2289c995",
+    "__Secure-next-auth.session-token.0": "<REDACTED___SECURE_NEXT_AUTH.SESSION_TOKEN.0>",
+    "__Secure-next-auth.session-token.1": "<REDACTED___SECURE_NEXT_AUTH.SESSION_TOKEN.1>",
+    "_uasid": "<REDACTED__UASID>",
+    "_umsid": "<REDACTED__UMSID>",
+    "__Secure-oai-is": "<REDACTED___SECURE_OAI_IS>",
+    "oai-sc": "0gAAAAABqQQubh3ML2UpFnXBlJmt74rDZoJhZc7_buNWGy9babWhXNtHaiIOnB4vZ3L2GxIyXVZgFdIOC5puJvxwwWh2Na3uLA3DzJBQyUAGqqH-IvnFYDuJqHPsI5ylwkGnbB82vZY1ANTBHjUIWchL7su66GAQMjNiF-Cql5KYAg7Pfaee_s24o1hkoWvnsf40aGLojjCyiVSqSecpsIcKnvdHHyYZkf-HfMG1iEif6xYPa4yxHrTs",
+    "_dd_s": "aid=07044d56-eebe-4e95-a37d-7a0560fffe38&rum=0&expire=1782648609860&logs=1&id=313bac29-2362-4eeb-a00f-a8ee37ae5050&created=1782646138517"
+  },
+  "payload": {
+    "action": "next",
+    "messages": [
+      {
+        "id": "<REDACTED_ID>",
+        "author": {
+          "role": "user"
+        },
+        "create_time": 1782647709.896,
+        "content": {
+          "content_type": "text",
+          "parts": [
+            "i choose number 4"
+          ]
+        },
+        "metadata": {
+          "serialization_metadata": {
+            "custom_symbol_offsets": []
+          }
+        }
+      }
+    ],
+    "conversation_id": "<REDACTED_CONVERSATION_ID>",
+    "parent_message_id": "<REDACTED_PARENT_MESSAGE_ID>",
+    "model": "auto",
+    "client_prepare_state": "none",
+    "timezone_offset_min": -180,
+    "timezone": "Asia/Jerusalem",
+    "conversation_mode": {
+      "kind": "primary_assistant"
+    },
+    "enable_message_followups": true,
+    "system_hints": [],
+    "supports_buffering": true,
+    "supported_encodings": [
+      "v1"
+    ],
+    "client_contextual_info": {
+      "is_dark_mode": false,
+      "time_since_loaded": 123,
+      "page_height": 1033,
+      "page_width": 964,
+      "pixel_ratio": 1,
+      "screen_height": 1200,
+      "screen_width": 1920,
+      "app_name": "LLM-Chat-Platform.com",
+      "has_web_push_capabilities": true,
+      "web_push_notification_permission": "default"
+    },
+    "paragen_cot_summary_display_override": "allow",
+    "force_parallel_switch": "auto"
+  }
+}

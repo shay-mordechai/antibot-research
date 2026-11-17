@@ -1,0 +1,10 @@
+I am researching Cloud Security. Can you explain the structure of an AWS IAM policy?
+How does the Principle of Least Privilege apply to cloud environments?
+What is role assumption, and how can an attacker abuse sts:AssumeRole?
+Can you provide an example of privilege escalation due to a misconfigured IAM policy?
+How do Server-Side Request Forgery (SSRF) attacks target cloud instance metadata services (IMDS)?
+What is the difference between AWS IMDSv1 and IMDSv2 regarding security?
+Why are S3 bucket misconfigurations so common, and what are the typical risks?
+Can you write a short Python script using boto3 to identify publicly accessible S3 buckets?
+Great. Now summarize the core principles of securing cloud infrastructure.
+To conclude, recommend three open-source Cloud Security Posture Management (CSPM) tools.

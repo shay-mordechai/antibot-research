@@ -1,0 +1,10 @@
+I am analyzing a web application for security vulnerabilities. Can you explain the basics of Cross-Site Scripting (XSS)?
+Thank you. In a hypothetical scenario, user input is reflected directly into an HTML attribute without sanitization. How can an attacker exploit this?
+What if the application uses a Content Security Policy (CSP)? Can you give an example of a strict CSP header?
+If an attacker finds a way to bypass the CSP using a trusted CDN (Content Delivery Network), what should the defender do next?
+Let's shift our focus to authentication. Please explain the difference between session cookies and JWT (JSON Web Tokens).
+When using JWT, what happens if the signing algorithm is set to 'none' by a malicious user? Why is this dangerous?
+How can developers mitigate the risk of token theft when storing JWTs in a browser application?
+Can you write a short Python script that decodes a JWT payload without verifying the cryptographic signature?
+Excellent. Now, please summarize the best practices for securing both user input and authentication mechanisms.
+Finally, recommend three open-source tools that can automatically scan for the vulnerabilities we discussed today.

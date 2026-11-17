@@ -1,0 +1,10 @@
+Let's discuss API Security. What are the most common vulnerabilities found in REST APIs?
+Can you explain what BOLA or IDOR (Insecure Direct Object Reference) is with a practical example?
+How can a security researcher systematically test an API for BOLA vulnerabilities?
+Moving to authentication, how does the OAuth 2.0 authorization code flow work?
+What is the purpose of the state parameter in OAuth, and how does it prevent CSRF?
+How can an attacker chain an open redirect vulnerability with OAuth to steal tokens?
+What are the best methods to implement rate limiting to prevent brute-force attacks?
+Can you write a short Python script to test an API endpoint's rate limit using asynchronous requests?
+Thank you. Please summarize the defense-in-depth strategies for modern APIs.
+Lastly, what are three open-source tools you recommend for API fuzzing and security testing?

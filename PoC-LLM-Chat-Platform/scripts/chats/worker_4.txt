@@ -1,0 +1,10 @@
+I want to learn about malware analysis. What is the difference between static and dynamic analysis?
+How can analysts identify if a malicious executable is packed or obfuscated?
+Can you explain how packing tools like UPX compress and execute binaries?
+What is API hooking, and how can a framework like Frida be used for dynamic analysis?
+Malware often uses anti-debugging techniques. Can you describe two common methods used to detect debuggers?
+How do malicious Office documents use VBA macros to drop secondary payloads?
+What techniques can an analyst use to safely extract embedded payloads from a malicious document?
+Can you write a simple Python script to extract printable ASCII strings from an unknown binary file?
+Excellent explanation. Please summarize the safety guidelines for setting up a malware analysis lab.
+Finally, suggest three open-source tools essential for reverse engineering and malware dissection.
